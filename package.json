@@ -1,0 +1,19 @@
+{
+  "name": "jses6",
+  "version": "1.0.0",
+  "description": "es6 with babel examples from https://learn.javascript.ru/es-modern",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexxSap/jsEs6Examples.git"
+  },
+  "author": "AlexxSap",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexxSap/jsEs6Examples/issues"
+  },
+  "homepage": "https://github.com/AlexxSap/jsEs6Examples#readme"
+}
