@@ -153,3 +153,39 @@
   let euser = new ExtUser('Вася', 'Задов');
   euser.hello();
 }
+
+//итераторы
+{
+   let myObj =
+  {
+    content: [1,2,3,666,4]
+  };
+
+  myObj[Symbol.iterator] = function()
+  {
+    let current = 0;
+    let source = this.content;
+    return {
+      next()
+      {
+          if(current < source.length)
+          {
+            current++;
+            return {done: false, value: source[current - 1]};
+          }
+          else
+          {
+            return {done: true};
+          }
+      }
+    }
+  };
+
+  for(let val of myObj)
+  {
+    console.log(val);
+  }
+
+
+
+}
