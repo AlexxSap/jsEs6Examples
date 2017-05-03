@@ -185,7 +185,29 @@
   {
     console.log(val);
   }
+}
 
+//map
+{
+  let map = new Map();
+  map.set(1, 'вася');
+  map.set(2, {name: 'петя'});
 
+  console.log(map);
 
+  for(let val of map.values())
+  {
+    console.log(val);
+  }
+}
+
+//set
+{
+  let set  = new Set();
+  set.add(1);
+  set.add(2);
+  set.add(1);
+  set.add(4);
+
+  console.log(set);
 }
