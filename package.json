@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/AlexxSap/jsEs6Examples/issues"
   },
-  "homepage": "https://github.com/AlexxSap/jsEs6Examples#readme"
+  "homepage": "https://github.com/AlexxSap/jsEs6Examples#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.4.0"
+  }
 }

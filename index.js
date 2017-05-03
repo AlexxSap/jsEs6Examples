@@ -71,3 +71,41 @@
   print2(1,2,3,4,5);
   print3();
 }
+
+//строки
+{
+  console.log(`много
+    строчный
+    текст`);
+
+    const apple = 666;
+    console.log(`стив съел ${apple} яблок`);
+
+    const str = 'ветер с моря дул... ';
+    console.log(str.repeat(2));
+    console.log(str.startsWith('ветер'));
+}
+
+//объекты и прототипы
+{
+  let name = 'someName';
+
+  let obj =
+  {
+    [name]: 'someValue'
+  };
+
+  console.log(obj);
+  console.log('someName' in obj);
+  console.log(name in obj);
+
+  let some =
+  {
+    hello()
+    {
+      console.log('hello!');
+    }
+  };
+
+  some.hello();
+}
