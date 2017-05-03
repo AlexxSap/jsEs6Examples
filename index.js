@@ -109,3 +109,47 @@
 
   some.hello();
 }
+
+//классы
+{
+  class User
+  {
+    constructor(name)
+    {
+      this.name = name;
+    }
+
+    hello()
+    {
+      console.log(`hello ${this.name}!!!`);
+    }
+
+    get fullName()
+    {
+      return this.name;
+    }
+
+    set fullName(name)
+    {
+      this.name = name;
+    }
+  };
+
+  class ExtUser extends User
+  {
+     constructor(name, surname)
+     {
+       super(`${name} ${surname}`);
+     }
+  };
+
+
+  let usr = new User('Вася');
+  usr.hello();
+  console.log(usr.fullName);
+  usr.fullName = 'Петя';
+  usr.hello();
+
+  let euser = new ExtUser('Вася', 'Задов');
+  euser.hello();
+}
