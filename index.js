@@ -211,3 +211,31 @@
 
   console.log(set);
 }
+
+console.log('\x1b[32m%s\x1b[0m', 'этот текст будет зелёным');
+console.log('\x1b[31m%s\x1b[0m', 'а этот красным');
+
+//промисы
+{
+  let promise = new Promise((accept, reject) => {
+    setTimeout(() => {
+    // accept('success');
+    reject(new Error('fuck!'));
+    }, 1000);
+  });
+
+// promise.then(
+//   result => {
+//     console.log(`result ${result}`);
+//   },
+//   error => {
+//     console.log(`error ${error.message}`);
+//   }
+// );
+
+promise
+.then(result => {console.log('some done'); return result;})
+.then(result => {console.log(result); return 666;})
+.then(num => console.log(num))
+.catch(error => console.log(error));
+}
